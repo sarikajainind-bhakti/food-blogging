@@ -1,0 +1,180 @@
+/* GLOBAL STYLES */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Lora', serif;
+  background: #FFFFFF;
+  color: #555555;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+/* SCROLLBAR STYLING */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C8A96B;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A67C52;
+}
+
+/* SELECTION STYLING */
+::selection {
+  background: #C8A96B;
+  color: #FFFFFF;
+}
+
+::-moz-selection {
+  background: #C8A96B;
+  color: #FFFFFF;
+}
+
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  color: #1A1A1A;
+  margin: 0;
+  padding: 0;
+}
+
+/* LINKS */
+a {
+  color: #C8A96B;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #6E4B2A;
+}
+
+/* BUTTONS */
+button {
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* IMAGES */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* INPUTS */
+input, textarea {
+  font-family: 'Lora', serif;
+  color: #555555;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #999;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* RESPONSIVE CONTAINER */
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 0.8rem;
+  }
+
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+/* UTILITY CLASSES */
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+.p-4 { padding: 2rem; }
