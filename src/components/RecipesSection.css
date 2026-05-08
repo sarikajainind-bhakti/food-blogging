@@ -1,0 +1,209 @@
+/* RECIPES SECTION STYLING */
+.recipes-section {
+  background: #FFFFFF;
+  padding: 4rem 1rem;
+}
+
+.recipes-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.recipe-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 2rem;
+  background: #F8F6F1;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-3px);
+}
+
+.recipe-card.image-right {
+  grid-template-columns: 1fr 1fr;
+}
+
+.recipe-card.image-right .recipe-image {
+  order: 2;
+}
+
+.recipe-card.image-right .recipe-content {
+  order: 1;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.recipe-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover .recipe-image img {
+  transform: scale(1.05);
+}
+
+.recipe-content {
+  padding: 1rem;
+}
+
+.recipe-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin: 0 0 0.8rem 0;
+}
+
+.recipe-meta {
+  font-family: 'Lora', serif;
+  font-size: 0.95rem;
+  color: #A67C52;
+  margin: 0 0 1rem 0;
+  font-weight: 500;
+}
+
+.recipe-description {
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.8;
+  margin: 0 0 1.5rem 0;
+}
+
+.recipe-link {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  color: #6E4B2A;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.recipe-link:hover {
+  color: #C8A96B;
+}
+
+/* TABLET RESPONSIVE */
+@media (max-width: 1024px) {
+  .recipe-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .recipe-card.image-right {
+    grid-template-columns: 1fr;
+  }
+
+  .recipe-card.image-right .recipe-image {
+    order: 0;
+  }
+
+  .recipe-card.image-right .recipe-content {
+    order: 0;
+  }
+
+  .recipe-image {
+    height: 300px;
+  }
+
+  .recipe-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .recipes-section {
+    padding: 3rem 1rem;
+  }
+
+  .recipes-grid {
+    gap: 2rem;
+  }
+
+  .recipe-card {
+    gap: 1.5rem;
+    padding: 1.2rem;
+  }
+
+  .recipe-image {
+    height: 250px;
+  }
+
+  .recipe-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .recipe-meta {
+    font-size: 0.9rem;
+  }
+
+  .recipe-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+
+  .recipe-link {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipes-section {
+    padding: 2rem 1rem;
+  }
+
+  .recipes-grid {
+    gap: 1.5rem;
+  }
+
+  .recipe-card {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .recipe-image {
+    height: 200px;
+  }
+
+  .recipe-content {
+    padding: 0.5rem;
+  }
+
+  .recipe-title {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .recipe-meta {
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .recipe-description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .recipe-link {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+}
